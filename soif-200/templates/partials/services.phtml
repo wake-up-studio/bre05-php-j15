@@ -1,0 +1,13 @@
+<section class="container services">
+    <h3>Nos services</h3>
+    <div class="card-grid">
+        <?php foreach($data["services"] as $service) { ?>
+        <div class="card">
+            <img src="assets/images/<?= $service["image"] ?>">
+            <h4><?= $service["name"] ?></h4>
+            <h5><?= $service["tagline"] ?></h5>
+            <p><?= $service["description"] ?></p>
+        </div>
+        <?php } ?>
+    </div>
+</section>
